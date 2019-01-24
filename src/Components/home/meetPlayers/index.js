@@ -1,16 +1,26 @@
 import React, { Component } from 'react';
 import Stripes from '../../../Resources/images/stripes.png'
 import { Tag } from '../../../utils/Misc';
+import Reveal from 'react-reveal/Reveal';
 
  class MeetPlayers extends Component {
 
     state={
-
+        show:false
     }
 
   render() {
     return (
-      <div className ="home_meetplayers"
+        <Reveal
+        fraction ={0.7}
+        onReveal = {()=> {
+
+        }
+
+        }
+
+        >
+            <div className ="home_meetplayers"
       style={{ background: `#ffffff url(${Stripes})`}}
       >
       <div className="container">
@@ -92,6 +102,12 @@ import { Tag } from '../../../utils/Misc';
 
         
       </div>
+
+
+        </Reveal>
+
+
+      
     )
   }
 }
