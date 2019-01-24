@@ -31,7 +31,7 @@ export const Tag =(props) => {
 }
 
 export const firebaseLooper = (snapshot) => {
-     const data =[];
+     let data =[];
      snapshot.forEach((childSnapshot) => {
          data.push({
              ...childSnapshot.val(),
@@ -40,3 +40,13 @@ export const firebaseLooper = (snapshot) => {
      } )
      return data
 } 
+
+export const reverseArray =(actualArray) => {
+    let reversedArray = []
+
+    for(let i=actualArray.length-1; i>=0; i--){
+        reversedArray.push(actualArray[i])
+    }
+return reversedArray;
+
+}

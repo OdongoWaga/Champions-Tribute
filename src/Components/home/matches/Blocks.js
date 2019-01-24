@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import {firebaseMatches} from '../../../firebase'
+import {firebaseMatches} from '../../../firebase';
+import {firebaseLooper, reverseArray} from '../../../utils/Misc';
 
  class Blocks extends Component {
   state={
@@ -7,9 +8,15 @@ import {firebaseMatches} from '../../../firebase'
   }
 
   componentDidMount() {
-      firebaseMatches.limitToLast(6).once('value').then((snapshot)=>
+      firebaseMatches.limitToLast(6).once('value').then((snapshot)=>{
+
+        const matches = firebaseLooper(snapshot);
+
+        this.setState({
+            matches: reverseArray(matches) 
+        })
       
-      )
+      })
   }
 
   showMatches = () => (
