@@ -5,7 +5,7 @@ import Blocks from './Blocks';
  const MatchesHome = () => {
   return (
 
-    <div className="home_matches-wrapper">
+    <div className="home_matches_wrapper">
     
     
     <div className ="container">
