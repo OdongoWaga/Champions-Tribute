@@ -27,7 +27,7 @@ class Text extends Component {
                             transform: `translate(260px,170px) rotateY(${rotate}deg)`
                         }}
                    >
-                    3
+                    5
                    </div>
                ) 
             }}
