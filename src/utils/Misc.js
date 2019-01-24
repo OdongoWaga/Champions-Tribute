@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 
+
 export const Tag =(props) => {
 
     const template = <div
@@ -49,4 +50,23 @@ export const reverseArray =(actualArray) => {
     }
 return reversedArray;
 
+}
+
+export const validate = (e) => {
+
+    let error = [true, ''];
+
+    if(e.validation.email){
+        const valid = /\S+@\S+\.\S+/.test(element.value);
+        const message = `${!valid ? 'Must be a valid email':''}`;
+        error = !valid ? [valid,message]: error;
+    }
+
+    if( e.validation.required) {
+        const valid = e.value.trim() !== '';
+        const message =`${!valid? 'Required': ''}`
+        error =!valid ? [valid, message] : error
+    }
+
+    return error;
 }
