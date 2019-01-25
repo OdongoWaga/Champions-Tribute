@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { firebaseDB } from '../../firebase';
-import { firebaseLooper } from '../ui/misc';
+import { firebaseLooper } from '../../utils/Misc';
 
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
