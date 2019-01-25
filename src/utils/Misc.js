@@ -57,7 +57,7 @@ export const validate = (e) => {
     let error = [true, ''];
 
     if(e.validation.email){
-        const valid = /\S+@\S+\.\S+/.test(element.value);
+        const valid = /\S+@\S+\.\S+/.test(e.value);
         const message = `${!valid ? 'Must be a valid email':''}`;
         error = !valid ? [valid,message]: error;
     }
