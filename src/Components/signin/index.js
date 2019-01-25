@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { firebase } from '../../firebase';
 
 import FormField from '../../utils/formField';
-import { validate } from '../../utils/Misc ';
+import { validate } from '../../utils/Misc';
 
 class SignIn extends Component {
 
