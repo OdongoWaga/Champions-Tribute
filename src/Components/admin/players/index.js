@@ -11,7 +11,7 @@ import Paper from '@material-ui/core/Paper';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 import { firebasePlayers } from '../../../firebase';
-import { firebaseLooper, reverseArray } from '../../ui/misc';
+import { firebaseLooper, reverseArray } from '../../../utils/Misc';
 
 class AdminPlayers extends Component {
 

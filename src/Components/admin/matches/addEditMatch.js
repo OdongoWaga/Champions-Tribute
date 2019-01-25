@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AdminLayout from '../../HOC/AdminLayout';
 
-import FormField from '../../ui/formFields';
+import FormField from '../../../utils/formField';
 import { validate } from '../../../utils/Misc';
 
 import { firebaseTeams , firebaseDB, firebaseMatches } from '../../../firebase';
