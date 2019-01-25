@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from './Hoc/Layout';
+import Layout from './Components/HOC/Layout';
 import { Switch }  from 'react-router-dom';
 
 import PrivateRoute from './Components/authRoutes/privateRoutes';
@@ -9,7 +9,7 @@ import Home from './Components/home';
 import SignIn from './Components/signin';
 import TheTeam from './Components/theTeam';
 import TheMatches from './Components/theMatches';
-import NotFound from './Components/ui/not_found';
+import NotFound from './utils/not_found';
 
 import Dashboard from './Components/admin/Dashboard';
 import AdminMatches from './Components/admin/matches';

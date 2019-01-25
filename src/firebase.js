@@ -10,7 +10,7 @@ const config ={
         authDomain: "champions-1a403.firebaseapp.com",
         databaseURL: "https://champions-1a403.firebaseio.com",
         projectId: "champions-1a403",
-        storageBucket: "",
+        storageBucket: "gs://champions-1a403.appspot.com",
         messagingSenderId: "938038477653"
 }
 firebase.initializeApp(config); 
