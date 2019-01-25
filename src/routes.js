@@ -4,8 +4,8 @@ import {Switch, Route} from "react-router-dom";
 import Home from './Components/home';
 import SignIn from './Components/signin';
 import Dashboard from './Components/admin/Dashboard';
-
-import PrivateRoute from './Components/authRoutes.js/privateRoutes';
+import PublicRoute from "./Components/authRoutes/publicRoutes"
+import PrivateRoute from './Components/authRoutes/privateRoutes';
 
 const Routes = (props) => {
   return (
@@ -13,8 +13,11 @@ const Routes = (props) => {
       <Layout >
         <Switch>
           <PrivateRoute {...props} exact path="/dashboard" component ={Dashboard} />
-          <Route exact path = "/sign_in" component={SignIn} />
-          <Route exact path = "/" component={Home} />
+          
+          <PublicRoute {...props} restricted={true} exact path="/" component ={Home} />
+          <PublicRoute {...props} restricted={false} exact path="/sign_in" component ={SignIn} />
+          
+          
           
         </Switch>
     
