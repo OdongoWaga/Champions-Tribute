@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import AdminLayout from '../../../Hoc/AdminLayout';
+import AdminLayout from '../../HOC/AdminLayout';
 
 import FormField from '../../ui/formFields';
-import { validate } from '../../ui/misc';
+import { validate } from '../../../utils/Misc';
 
 import { firebaseTeams , firebaseDB, firebaseMatches } from '../../../firebase';
-import { firebaseLooper } from '../../ui/misc';
+import { firebaseLooper } from '../../../utils/Misc';
 
 class AddEditMatch extends Component {
 

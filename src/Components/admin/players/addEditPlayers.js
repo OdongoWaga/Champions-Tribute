@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import AdminLayout from '../../../Hoc/AdminLayout';
+import AdminLayout from '../../HOC/AdminLayout';
 
-import FormField from '../../ui/formFields';
-import { validate } from '../../ui/misc';
+import FormField from '../../../utils/formField';
+import { validate } from '../../../utils/Misc';
 
-import Fileuploader from '../../ui/fileuploader';
+import Fileuploader from '../../../utils/fileuploader';
 import { firebasePlayers , firebaseDB, firebase } from '../../../firebase';
 
 class AddEditPlayers extends Component {
