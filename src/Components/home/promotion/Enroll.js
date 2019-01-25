@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal';
 import FormField from '../../../utils/formField';
-import { validate} from '../../../utils/Misc'
-
-
+import { validate} from '../../../utils/Misc';
+import {firebasePromotions} from '../../../firebase'
 
 class Enroll extends Component {
 
@@ -125,8 +124,8 @@ class Enroll extends Component {
                             <div className="success_label">{this.state.formSuccess}</div>
                             <button onClick={(event)=> this.submitForm(event)}>Enroll</button>
                             <div className="enroll_discl">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </div>
+                            
+                            Not Affiliated to City in any way.                            </div>
                         </div>
                     </form>
                 </div>
