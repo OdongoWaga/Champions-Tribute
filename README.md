@@ -1,6 +1,6 @@
 # Manchester City Tribute Page
 
 
-React App Firebase backend. 
+React Frontend Firebase backend. 
 
 [View Here](https://react-manchester.herokuapp.com/team)
