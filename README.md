@@ -3,4 +3,4 @@
 
 React App Firebase backend. 
 
-(View Here)[https://react-manchester.herokuapp.com/team]
+[View Here](https://react-manchester.herokuapp.com/team)
